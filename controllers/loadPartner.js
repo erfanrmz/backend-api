@@ -1,6 +1,6 @@
 const Partner = require("../models/partner");
 
-// @desc loading a partner and return it as json
+// @desc loading a partner with specefic id in query
 // @route GET /load-partner
 // @access public
 

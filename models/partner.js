@@ -4,6 +4,7 @@ const partnerSchema = new mongoose.Schema({
   id: {
     type: Number,
     required: true,
+    unique: true,
   },
   tradingName: {
     type: String,
