@@ -14,6 +14,9 @@ app.use(express.json());
 //Enable CORS
 app.use(cors());
 
+//routes
+app.use("/create-partner", require("./routes/createPartner"));
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () =>
