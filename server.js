@@ -18,6 +18,7 @@ app.use(cors());
 
 //routes
 app.use("/create-partner", require("./routes/createPartner"));
+app.use("/load-partner", require("./routes/loadPartner"));
 
 const PORT = process.env.PORT || 3000;
 
