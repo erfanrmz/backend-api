@@ -41,6 +41,25 @@ The API supports the following endpoints:
 
 You can use tools like [Postman](https://www.postman.com) or [curl](https://curl.se) to interact with the API.
 
+## Automation test
+1. first install mocha with npm
+   ```shell
+   npm install -g mocha
+   ```
+2.install all dependecies 
+   ```shell
+   npm install
+   ```
+3. run ATDD.js with mocha
+   ```shell
+   mocha ATDD.js
+   ```
+4. if running scripts is disable on your system open a powershell and set Execution Policy to RemoteSigned
+   ```shell
+   Set-ExecutionPolicy RemoteSigned
+   ```
+
+
 ## Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request to this repository.
