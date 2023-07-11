@@ -65,13 +65,20 @@ exports.searchPartner = async (req, res, next) => {
         }
       }
     });
-    if (insides.length == 0)
+    if (insides.length == 0) {
       return res.status(200).json({
         success: true,
-        message: "found",
+        message: "not in any partner's coverage area",
         data: insides,
-        nearestPartnerIndex: nearestID,
+        nearestPartnerIndex: -1,
       });
+    }
+    return res.status(200).json({
+      success: true,
+      message: "found",
+      data: insides,
+      nearestPartnerIndex: nearestID,
+    });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "server error" });
