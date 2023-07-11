@@ -6,7 +6,7 @@ const API_URL = "https://api.openweathermap.org/data/2.5/weather";
 
 describe("Open Weather API Tests", () => {
   it("should get weather by city", async () => {
-    const city = "lon";
+    const city = "London";
     const queryParams = {
       q: city,
       appid: API_KEY,
